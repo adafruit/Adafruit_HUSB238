@@ -80,15 +80,15 @@ typedef enum _husb_5v_current_contract {
     CURRENT5V_3_A = 0b11      ///< 3A
 } HUSB238_5VCurrentContract;
 
-typedef enum _husb_pdo_selection {
-    PDO_NOT_SELECTED = 0b0000, ///< Not selected
-    PDO_SRC_5V = 0b0001,       ///< SRC_PDO_5V
-    PDO_SRC_9V = 0b0010,       ///< SRC_PDO_9V
-    PDO_SRC_12V = 0b0011,      ///< SRC_PDO_12V
-    PDO_SRC_15V = 0b1000,      ///< SRC_PDO_15V
-    PDO_SRC_18V = 0b1001,      ///< SRC_PDO_18V
-    PDO_SRC_20V = 0b1010       ///< SRC_PDO_20V
-} HUSB238_PDOSelection;
+typedef enum _husb_pd_selection {
+    PD_NOT_SELECTED = 0b0000, ///< Not selected
+    PD_SRC_5V = 0b0001,       ///< SRC_PDO_5V
+    PD_SRC_9V = 0b0010,       ///< SRC_PDO_9V
+    PD_SRC_12V = 0b0011,      ///< SRC_PDO_12V
+    PD_SRC_15V = 0b1000,      ///< SRC_PDO_15V
+    PD_SRC_18V = 0b1001,      ///< SRC_PDO_18V
+    PD_SRC_20V = 0b1010       ///< SRC_PDO_20V
+} HUSB238_PDSelection;
 
 
 
@@ -104,21 +104,20 @@ public:
 
   public:
     // Getter functions
-    bool getAttached();
-    bool getCCStatus();
+    bool isAttached();
+    bool getCCdirection();
     HUSB238_ResponseCodes getPDResponse();
     bool get5VContractV();
     HUSB238_5VCurrentContract get5VContractA();
-    HUSB238_PDOSelection isVoltageDetected(HUSB238_PDOSelection pd);
-    HUSB238_CurrentSetting currentDetected(HUSB238_PDOSelection pd);
+    bool isVoltageDetected(HUSB238_PDSelection pd);
+    HUSB238_CurrentSetting currentDetected(HUSB238_PDSelection pd);
     HUSB238_VoltageSetting getPDSrcVoltage();
     HUSB238_CurrentSetting getPDSrcCurrent();
-    HUSB238_PDOSelection getSelectedPDO();
+    HUSB238_PDSelection getSelectedPD();
     
-    // Setter functions
-    void selectPDO(HUSB238_PDOSelection pd);
+    void selectPD(HUSB238_PDSelection pd);
     void reset();
-    void requestPDO();
+    void requestPD();
     void getSourceCapabilities();
 
 private:
