@@ -33,6 +33,7 @@
 #define HUSB238_SRC_PDO 0x08     ///< Register value for SRC_PDO in HUSB238
 #define HUSB238_GO_COMMAND 0x09  ///< Register value for GO_COMMAND in HUSB238
 
+/**  Available currents per PD output */
 typedef enum _husb_currents {
   CURRENT_0_5_A = 0b0000,  ///< 0.5A
   CURRENT_0_7_A = 0b0001,  ///< 0.7A
@@ -52,6 +53,7 @@ typedef enum _husb_currents {
   CURRENT_5_0_A = 0b1111   ///< 5.0A
 } HUSB238_CurrentSetting;
 
+/** Available voltages for PD output */
 typedef enum _husb_voltages {
   UNATTACHED = 0b0000, ///< Unattached
   PD_5V = 0b0001,      ///< 5V
@@ -62,6 +64,7 @@ typedef enum _husb_voltages {
   PD_20V = 0b0110      ///< 20V
 } HUSB238_VoltageSetting;
 
+/** Responses to PD query */
 typedef enum _husb_response_codes {
   NO_RESPONSE = 0b000,        ///< No response
   SUCCESS = 0b001,            ///< Success
@@ -71,6 +74,7 @@ typedef enum _husb_response_codes {
       0b101 ///< Transaction fail. No GoodCRC is received after sending
 } HUSB238_ResponseCodes;
 
+/** Default 5V output current */
 typedef enum _husb_5v_current_contract {
   CURRENT5V_DEFAULT = 0b00, ///< Default current
   CURRENT5V_1_5_A = 0b01,   ///< 1.5A
@@ -78,6 +82,7 @@ typedef enum _husb_5v_current_contract {
   CURRENT5V_3_A = 0b11      ///< 3A
 } HUSB238_5VCurrentContract;
 
+/** What voltage is selected for PD sink */
 typedef enum _husb_pd_selection {
   PD_NOT_SELECTED = 0b0000, ///< Not selected
   PD_SRC_5V = 0b0001,       ///< SRC_PDO_5V
