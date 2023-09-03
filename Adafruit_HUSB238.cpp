@@ -15,11 +15,13 @@
 
   @section author Author
 
-  Limor Fried (Adafruit Industries)
+  Limor Fried (Adafruit Industries) with OpenAI ChatGPT v4 Aug 3rd, 2023 build
+  https://chat.openai.com/share/d05c963d-b610-4eef-ad98-05656a33e118
+  https://chat.openai.com/share/a276ce74-f810-4dba-a324-e9fd1545085f
 
   @section license License
 
-  BSD (see license.txt)
+  MIT (see license.txt)
 */
 /**************************************************************************/
 #include "Adafruit_HUSB238.h"

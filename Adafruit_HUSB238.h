@@ -3,7 +3,7 @@
   @file     Adafruit_HUSB238.h
 
   Author: Limor Fried (Adafruit Industries)
-  License: BSD (see license.txt)
+  License: MIT (see license.txt)
 
   This is a library for the Adafruit HUSB238 I2C motor driver
   ----> http://www.adafruit.com/
