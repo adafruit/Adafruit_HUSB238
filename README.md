@@ -13,7 +13,10 @@ This chip uses I2C to communicate, 2 pins are required to interface
 
 Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
 
-Written by Limor Fried for Adafruit Industries.  
+Written by Limor Fried (Adafruit Industries) with OpenAI ChatGPT v4 Aug 3rd, 2023 build
+  * https://chat.openai.com/share/d05c963d-b610-4eef-ad98-05656a33e118
+  * https://chat.openai.com/share/a276ce74-f810-4dba-a324-e9fd1545085f
+
 MIT license, check license.txt for more information
 All text above must be included in any redistribution
 
