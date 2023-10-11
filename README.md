@@ -2,12 +2,12 @@ Adafruit_HUSB238 [![Build Status](https://github.com/adafruit/Adafruit_HUSB238/w
 
 ================
 
-<a href="https://www.adafruit.com/product/4558"><img src="assets/board.jpg?raw=true" width="500px"></a>
+<a href="https://www.adafruit.com/product/5807"><img src="https://cdn-shop.adafruit.com/970x728/5807-04.jpg" width="500px"></a>
 
 This is the Adafruit HUSB238 I2C USB Power Delivery sink chip.
 
 Tested and works great with the Adafruit HUSB238 Breakout Board 
-* http://www.adafruit.com/products/XXXX
+* [https://www.adafruit.com/product/5807](https://www.adafruit.com/product/5807)
 
 This chip uses I2C to communicate, 2 pins are required to interface
 
